@@ -14,10 +14,13 @@ public class ReverseNum {
 
 	private static void reverseNum(int num) {
 		String rNum = "";
-		while (num % 10 > 0) {
-			int last_digit = num % 10;
+		int original_num =num;
+		int len = (""+original_num).length();
+		while (len>0) {
+			int last_digit = original_num % 10;
 			rNum += last_digit;
-			num = num / 10;
+			original_num = original_num / 10;
+			len--;
 		}
 		System.out.println(rNum);
 	}
