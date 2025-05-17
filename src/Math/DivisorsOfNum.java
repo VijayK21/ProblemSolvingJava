@@ -17,7 +17,7 @@ public class DivisorsOfNum {
 
 		ArrayList<Integer> Divisors = new ArrayList<Integer>();
 
-		for (int i = 1; i < number / 2; i++) {
+		for (int i = 1; i <= number / 2; i++) {
 			if (number % i == 0) {
 				Divisors.add(i);
 			}
